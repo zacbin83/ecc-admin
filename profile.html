@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Pure Admin Panel</title>
+
+    <link rel="stylesheet" href="assets/css/pure-min.css">
+    <link rel="stylesheet" href="assets/css/pure-responsive-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-3-24">
+            <div id="menu">
+                <div class="pure-menu">
+                    <p class="pure-menu-heading">
+                        <img src="/assets/img/logoadmin.png" alt="Logo Admin" style="width:40%">
+                        <a href="login.html" style="margin-left:10px;"class="pure-button button-xsmall">Log out</a>
+                    </p>
+                    <ul class="pure-menu-list">
+                        <li>
+                            <a href="dashboard.html" class="pure-menu-link">Dashboard</a>
+                        </li>
+                        <li class="menu-item-divided">
+                            <a href="post-list.html" class="pure-menu-link">Blogs</a>
+                        </li>
+                        <li class="menu-item-divided">
+                            <a href="member-list.html" class="pure-menu-link">Thành viên</a>
+                        </li>
+                        <li class="menu-item-divided pure-menu-selected">
+                            <a href="profile.html" class="pure-menu-link">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-21-24">
+            <div class="header-small">
+
+                <div class="items">
+                    <h1 class="subhead">Profile</h1>
+
+                    <aside class="pure-message message-success">
+                        <p><strong>SUCCESS</strong>: Success message.</p>
+                    </aside>
+                    <aside class="pure-message message-error">
+                        <p><strong>ERROR</strong>: Error message.</p>
+                    </aside>
+                    <aside class="pure-message message-warning">
+                        <p><strong>WARNING</strong>: Warning message.</p>
+                    </aside>
+                    <form action="#" method="post" novalidate autocomplete="off" class="pure-form pure-form-stacked">
+                        <fieldset>
+
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" type="text" placeholder="Last Name" class="pure-input-1" value="">
+
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" type="text" placeholder="First Name" class="pure-input-1" value="">
+
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email" class="pure-input-1" value="" disabled>
+
+                            <label for="password">Password</label>
+                            <input id="password" type="password" placeholder="Password" class="pure-input-1" value="">
+
+                            <label for="role">Role</label>
+                            <select id="role" class="pure-input-1">
+                                <option value="1">User</option>
+                                <option value="2">Moderator</option>
+                                <option value="3">Super Moderator</option>
+                                <option value="4">Admin</option>
+                            </select>
+
+                            <label for="status">Status</label>
+                            <select id="status" class="pure-input-1">
+                                <option value="1">Passive</option>
+                                <option value="2">Banned</option>
+                                <option value="3">Awaiting</option>
+                                <option value="4">Active</option>
+                            </select>
+
+                            <input type="hidden" name="id" value="1">
+                            <button type="submit" class="pure-button button-success">Save</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
